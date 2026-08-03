@@ -1,0 +1,9 @@
+main:
+  - title: "Início"
+    url: /
+  - title: "Projetos"
+    url: /projects/
+  - title: "Experiência"
+    url: /experience/
+  - title: "Contato"
+    url: /contact/
