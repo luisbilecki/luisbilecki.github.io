@@ -5,7 +5,7 @@ permalink: /
 author_profile: false
 ---
 
-<div class="under-construction">
+<div class="terminal-wrap">
   <div class="terminal">
     <div class="terminal__bar">
       <span class="terminal__dot"></span>

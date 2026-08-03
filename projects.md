@@ -5,7 +5,7 @@ permalink: /projects/
 author_profile: false
 ---
 
-<div class="under-construction terminal-page">
+<div class="terminal-wrap terminal-page">
   <div class="terminal">
     <div class="terminal__bar">
       <span class="terminal__dot"></span>
