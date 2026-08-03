@@ -13,6 +13,15 @@ author_profile: false
       <span class="terminal__dot"></span>
     </div>
     <div class="terminal__body">
+      <p class="terminal__prompt">luis@bilecki <span class="path">~/projects</span> $ ls --featured</p>
+
+      <div class="term-entry">
+        <p class="term-entry__title">MeuVE <span class="term-entry__period">[TypeScript · React Native · private]</span></p>
+        <p class="terminal__output" lang="pt-BR" data-lang="pt-br">App móvel offline-first para motoristas de veículos elétricos no Brasil: registro de recargas, cálculo de custo de energia e economia vs. combustão, dashboard com métricas e gráficos, gestão de veículos e locais de recarga (AC/DC) com mapa. React Native (Expo), TypeScript strict, SQLite, cobertura de testes &gt;90%.</p>
+        <p class="terminal__output" lang="en" data-lang="en" hidden>Offline-first mobile app for EV drivers in Brazil: charge session tracking, energy cost and savings vs. combustion, dashboard with metrics and charts, vehicle and charging-location (AC/DC) management with maps. React Native (Expo), strict TypeScript, SQLite, &gt;90% test coverage.</p>
+        <p class="terminal__output" lang="es" data-lang="es" hidden>App móvil offline-first para conductores de vehículos eléctricos en Brasil: registro de recargas, cálculo de costo de energía y ahorro vs. combustión, dashboard con métricas y gráficos, gestión de vehículos y puntos de recarga (AC/DC) con mapa. React Native (Expo), TypeScript strict, SQLite, cobertura de tests &gt;90%.</p>
+      </div>
+
       <p class="terminal__prompt">luis@bilecki <span class="path">~/projects</span> $ ls --pinned</p>
 
       <div class="term-entry">
