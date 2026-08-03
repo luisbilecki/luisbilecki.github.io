@@ -1,0 +1,99 @@
+---
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+:root {
+  --paper: #F5F3EF;
+  --ink: #1E2124;
+  --teal: #1F6F63;
+  --clay: #C97C4F;
+  --muted: #6B6F76;
+}
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: "IBM Plex Sans", -apple-system, sans-serif;
+}
+
+a {
+  color: var(--teal);
+}
+
+.masthead,
+.page__footer {
+  display: none;
+}
+
+.under-construction {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.monogram {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(3.5rem, 12vw, 7rem);
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  line-height: 1;
+  margin: 0 0 1.5rem;
+}
+
+.uc-status {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin: 0 0 0.5rem;
+}
+
+.uc-message {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  max-width: 32rem;
+  margin: 0 0 2rem;
+}
+
+.uc-message[hidden] {
+  display: none;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-switch button {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid var(--muted);
+  color: var(--muted);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.lang-switch button:hover,
+.lang-switch button:focus-visible {
+  color: var(--teal);
+  border-color: var(--teal);
+}
+
+.lang-switch button[aria-pressed="true"] {
+  color: var(--paper);
+  background-color: var(--teal);
+  border-color: var(--teal);
+}
