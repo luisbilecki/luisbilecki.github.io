@@ -5,21 +5,22 @@
 @import "minimal-mistakes";
 
 :root {
-  --paper: #F5F3EF;
-  --ink: #1E2124;
-  --teal: #1F6F63;
-  --clay: #C97C4F;
-  --muted: #6B6F76;
+  --bg: #12141A;
+  --panel: #1A1D24;
+  --fg: #E6E8EB;
+  --cyan: #6FD1C6;
+  --amber: #E0A458;
+  --muted: #7B8290;
 }
 
 body {
-  background-color: var(--paper);
-  color: var(--ink);
+  background-color: var(--bg);
+  color: var(--fg);
   font-family: "IBM Plex Sans", -apple-system, sans-serif;
 }
 
 a {
-  color: var(--teal);
+  color: var(--cyan);
 }
 
 .masthead,
@@ -31,69 +32,109 @@ a {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  text-align: center;
   padding: 2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  font-family: "JetBrains Mono", "IBM Plex Mono", monospace;
 }
 
-.monogram {
-  font-family: "Fraunces", Georgia, serif;
-  font-weight: 600;
-  font-size: clamp(3.5rem, 12vw, 7rem);
-  letter-spacing: 0.02em;
-  color: var(--ink);
-  line-height: 1;
-  margin: 0 0 1.5rem;
+.terminal {
+  width: 100%;
+  background-color: var(--panel);
+  border: 1px solid #2A2E38;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.uc-status {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--clay);
-  margin: 0 0 0.5rem;
+.terminal__bar {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid #2A2E38;
 }
 
-.uc-message {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: clamp(1.25rem, 3vw, 1.75rem);
-  max-width: 32rem;
-  margin: 0 0 2rem;
+.terminal__dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: #3A3F4B;
 }
 
-.uc-message[hidden] {
+.terminal__body {
+  padding: 1.5rem;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  line-height: 1.7;
+}
+
+.terminal__prompt {
+  color: var(--muted);
+}
+
+.terminal__prompt .path {
+  color: var(--cyan);
+}
+
+.terminal__output {
+  color: var(--fg);
+  margin: 0.75rem 0 1.25rem;
+}
+
+.terminal__output .status {
+  color: var(--amber);
+}
+
+.terminal__output[hidden] {
   display: none;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.55em;
+  height: 1em;
+  background-color: var(--amber);
+  vertical-align: text-bottom;
+  margin-left: 0.2em;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor {
+    animation: none;
+  }
 }
 
 .lang-switch {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .lang-switch button {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 0.85rem;
   background: none;
-  border: 1px solid var(--muted);
+  border: none;
   color: var(--muted);
-  padding: 0.4rem 0.9rem;
-  border-radius: 999px;
+  padding: 0;
   cursor: pointer;
-  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.lang-switch button::before {
+  content: "--lang=";
+  color: #3A3F4B;
 }
 
 .lang-switch button:hover,
 .lang-switch button:focus-visible {
-  color: var(--teal);
-  border-color: var(--teal);
+  color: var(--cyan);
 }
 
 .lang-switch button[aria-pressed="true"] {
-  color: var(--paper);
-  background-color: var(--teal);
-  border-color: var(--teal);
+  color: var(--amber);
 }
