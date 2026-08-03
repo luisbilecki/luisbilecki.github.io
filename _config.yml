@@ -1,5 +1,5 @@
-title: "Luis Bilecki"
-description: "Portfólio profissional de Luis Bilecki"
+title: "Luís Felipe Bilecki"
+description: "Portfólio profissional de Luís Felipe Bilecki"
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "default"
 
@@ -7,7 +7,7 @@ url: ""
 baseurl: ""
 
 author:
-  name: "Luis Bilecki"
+  name: "Luís Felipe Bilecki"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
