@@ -17,7 +17,7 @@ author_profile: false
       <ul class="term-links">
         <li><a href="https://github.com/luisbilecki" rel="me noopener" target="_blank"><i class="fab fa-fw fa-github" aria-hidden="true"></i> github.com/luisbilecki</a></li>
         <li><a href="https://www.linkedin.com/in/luisbilecki/" rel="me noopener" target="_blank"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> linkedin.com/in/luisbilecki</a></li>
-        <li><a href="https://www.hackerrank.com/profile/felipe436" rel="me noopener" target="_blank"><i class="fab fa-fw fa-hackerrank" aria-hidden="true"></i> hackerrank.com/profile/felipe436</a></li>
+        <li><a href="https://www.hackerrank.com/profile/felipe436" rel="me noopener" target="_blank"><i class="fab fa-fw fa-hackerrank" aria-hidden="true"></i> hackerrank.com/felipe436</a></li>
         <li><a href="mailto:me@luisbilecki.com"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> me@luisbilecki.com</a></li>
       </ul>
 
