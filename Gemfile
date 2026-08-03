@@ -9,6 +9,7 @@ gem "jekyll-seo-tag"
 gem "jekyll-paginate"
 gem "jekyll-gist"
 gem "webrick"
+gem "faraday-retry"
 
 # stdlib gems removed by default starting Ruby 3.4
 gem "base64"
