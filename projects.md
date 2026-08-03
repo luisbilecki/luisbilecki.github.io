@@ -16,10 +16,31 @@ author_profile: false
       <p class="terminal__prompt">luis@bilecki <span class="path">~/projects</span> $ ls --featured</p>
 
       <div class="term-entry">
-        <p class="term-entry__title">MeuVE <span class="term-entry__period">[TypeScript · React Native · private]</span></p>
+        <p class="term-entry__title">MeuVE <span class="term-entry__period">[TypeScript · React Native · private · em desenvolvimento]</span></p>
         <p class="terminal__output" lang="pt-BR" data-lang="pt-br">App móvel offline-first para motoristas de veículos elétricos no Brasil: registro de recargas, cálculo de custo de energia e economia vs. combustão, dashboard com métricas e gráficos, gestão de veículos e locais de recarga (AC/DC) com mapa. React Native (Expo), TypeScript strict, SQLite, cobertura de testes &gt;90%.</p>
         <p class="terminal__output" lang="en" data-lang="en" hidden>Offline-first mobile app for EV drivers in Brazil: charge session tracking, energy cost and savings vs. combustion, dashboard with metrics and charts, vehicle and charging-location (AC/DC) management with maps. React Native (Expo), strict TypeScript, SQLite, &gt;90% test coverage.</p>
         <p class="terminal__output" lang="es" data-lang="es" hidden>App móvil offline-first para conductores de vehículos eléctricos en Brasil: registro de recargas, cálculo de costo de energía y ahorro vs. combustión, dashboard con métricas y gráficos, gestión de vehículos y puntos de recarga (AC/DC) con mapa. React Native (Expo), TypeScript strict, SQLite, cobertura de tests &gt;90%.</p>
+      </div>
+
+      <div class="term-entry">
+        <p class="term-entry__title"><a href="https://github.com/luisbilecki/go-hexagonal-architecture-example" rel="noopener" target="_blank">go-hexagonal-architecture-example</a> <span class="term-entry__period">[Go]</span></p>
+        <p class="terminal__output" lang="pt-BR" data-lang="pt-br">API em Go com arquitetura hexagonal (ports &amp; adapters): domínio isolado das camadas externas, endpoints REST de pedidos, SQLite com migrações automáticas, Docker e Makefile.</p>
+        <p class="terminal__output" lang="en" data-lang="en" hidden>Go API using hexagonal architecture (ports &amp; adapters): domain isolated from external layers, REST endpoints for orders, SQLite with automatic migrations, Docker and Makefile.</p>
+        <p class="terminal__output" lang="es" data-lang="es" hidden>API en Go con arquitectura hexagonal (ports &amp; adapters): dominio aislado de las capas externas, endpoints REST de pedidos, SQLite con migraciones automáticas, Docker y Makefile.</p>
+      </div>
+
+      <div class="term-entry">
+        <p class="term-entry__title"><a href="https://github.com/luisbilecki/cqrs-example" rel="noopener" target="_blank">cqrs-example</a> <span class="term-entry__period">[Go]</span></p>
+        <p class="terminal__output" lang="pt-BR" data-lang="pt-br">Clean Architecture com CQRS em Go: módulo de reserva de veículos com modelos de leitura/escrita separados, validação de sobreposição, máquina de estados e persistência SQLite com migrations.</p>
+        <p class="terminal__output" lang="en" data-lang="en" hidden>Clean Architecture with CQRS in Go: vehicle booking module with separate read/write models, overlap validation, state machine and SQLite persistence with migrations.</p>
+        <p class="terminal__output" lang="es" data-lang="es" hidden>Clean Architecture con CQRS en Go: módulo de reserva de vehículos con modelos de lectura/escritura separados, validación de superposición, máquina de estados y persistencia SQLite con migrations.</p>
+      </div>
+
+      <div class="term-entry">
+        <p class="term-entry__title"><a href="https://github.com/luisbilecki/desafio-fc-ci-go" rel="noopener" target="_blank">desafio-fc-ci-go</a> <span class="term-entry__period">[JavaScript]</span></p>
+        <p class="terminal__output" lang="pt-BR" data-lang="pt-br">Pipeline de CI (curso Fullcycle 3.0): app Node.js com testes de unidade, GitHub Actions, SonarCloud e status checks bloqueando merge sem quality gate.</p>
+        <p class="terminal__output" lang="en" data-lang="en" hidden>CI pipeline (Fullcycle 3.0 course): Node.js app with unit tests, GitHub Actions, SonarCloud and status checks blocking merges without passing the quality gate.</p>
+        <p class="terminal__output" lang="es" data-lang="es" hidden>Pipeline de CI (curso Fullcycle 3.0): app Node.js con tests unitarios, GitHub Actions, SonarCloud y status checks que bloquean el merge sin pasar el quality gate.</p>
       </div>
 
       <p class="terminal__prompt">luis@bilecki <span class="path">~/projects</span> $ ls --pinned</p>
