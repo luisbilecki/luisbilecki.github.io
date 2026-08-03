@@ -1,0 +1,24 @@
+title: "Luis Bilecki"
+description: "Portfólio profissional de Luis Bilecki"
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
+
+url: ""
+baseurl: ""
+
+author:
+  name: "Luis Bilecki"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/luisbilecki"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/luisbilecki/"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+
+markdown: kramdown
