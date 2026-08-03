@@ -1,0 +1,28 @@
+<div class="lang-switch" role="group" aria-label="Idioma / Language / Idioma">
+  <button type="button" data-set-lang="pt-br" aria-pressed="true">pt-br</button>
+  <button type="button" data-set-lang="en" aria-pressed="false">en</button>
+  <button type="button" data-set-lang="es" aria-pressed="false">es</button>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll("[data-set-lang]");
+    var messages = document.querySelectorAll("[data-lang]");
+
+    function setLang(lang) {
+      messages.forEach(function (el) {
+        el.hidden = el.getAttribute("data-lang") !== lang;
+      });
+      buttons.forEach(function (btn) {
+        btn.setAttribute("aria-pressed", btn.getAttribute("data-set-lang") === lang);
+      });
+      document.documentElement.setAttribute("lang", lang === "pt-br" ? "pt-BR" : lang);
+    }
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        setLang(btn.getAttribute("data-set-lang"));
+      });
+    });
+  })();
+</script>

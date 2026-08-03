@@ -28,7 +28,7 @@ a {
   display: none;
 }
 
-.under-construction {
+.terminal-wrap {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -107,6 +107,132 @@ a {
   .cursor {
     animation: none;
   }
+}
+
+.terminal-page {
+  max-width: 48rem;
+  align-items: stretch;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  justify-content: flex-start;
+}
+
+.term-nav,
+.term-links {
+  list-style: none;
+  margin: 0.75rem 0 1.25rem;
+  padding: 0;
+}
+
+.term-nav li,
+.term-links li {
+  margin: 0.35rem 0;
+}
+
+.term-nav a,
+.term-links a,
+.terminal__prompt a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.term-nav a:hover,
+.term-links a:hover,
+.terminal__prompt a:hover,
+.term-nav a:focus-visible,
+.term-links a:focus-visible,
+.terminal__prompt a:focus-visible {
+  text-decoration: underline;
+}
+
+.terminal__prompt a {
+  color: inherit;
+}
+
+.term-entry {
+  margin: 0.75rem 0 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid #2A2E38;
+}
+
+.term-entry__title {
+  color: var(--fg);
+  margin: 0;
+  font-weight: 500;
+}
+
+.term-entry__title a {
+  color: var(--cyan);
+}
+
+.term-entry__org {
+  color: var(--amber);
+}
+
+.term-entry__period {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0.1rem 0 0.4rem;
+}
+
+.term-entry .terminal__output {
+  margin: 0.25rem 0 0;
+}
+
+.term-form {
+  margin: 0.75rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-width: 32rem;
+}
+
+.term-form label {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.term-form label[hidden] {
+  display: none;
+}
+
+.term-form input,
+.term-form textarea {
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--fg);
+  background-color: var(--bg);
+  border: 1px solid #2A2E38;
+  border-radius: 4px;
+  padding: 0.5rem 0.7rem;
+  margin-bottom: 0.6rem;
+}
+
+.term-form input:focus-visible,
+.term-form textarea:focus-visible {
+  outline: 1px solid var(--cyan);
+  border-color: var(--cyan);
+}
+
+.term-form button {
+  font-family: inherit;
+  font-size: 0.9rem;
+  align-self: flex-start;
+  color: var(--bg);
+  background-color: var(--cyan);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.term-form button:hover,
+.term-form button:focus-visible {
+  background-color: var(--amber);
+}
+
+.term-form button [hidden] {
+  display: none;
 }
 
 .lang-switch {
